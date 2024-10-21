@@ -29,23 +29,23 @@ import { EyeIcon } from "@heroicons/vue/solid";
       </div>
       <!-- Sign in Button -->
       <div class="text-right mb-6">
-        <span class="text-sm ">Forgot </span>
-        <a href="#" class="text-blue-500 text-sm underline"
+        <span class="text-xs">Forgot </span>
+        <a href="#" class="text-[#0060fc] text-xs underline font-semibold"
           >username</a
         >
-        <span class="text-sm"> or </span>
-        <a href="#" class="text-blue-500 text-sm underline"
+        <span class="text-xs"> or </span>
+        <a href="#" class="text-[#0060fc] text-xs underline font-semibold"
           >password?</a
         >
       </div>
       <button
-        class="w-full bg-purple-700 text-white py-2 rounded-lg hover:bg-purple-800"
+        class="w-full bg-[#5b2f91] text-white py-2 font-semibold rounded-lg hover:bg-purple-800"
       >
         Sign in
       </button>
     </form>
     <div class="text-center mt-4">
-      <a href="#" class="text-blue-500 text-sm">Create a new account</a>
+      <a href="#" class="text-[#0060fc] text-sm font-semibold">Create a new account</a>
     </div>
   </div>
 </template>
