@@ -29,19 +29,19 @@ const selectLanguage = (language) => {
 
 
 <template>
-    <div class="flex flex-col items-center justify-between mx-6 pt-9 border-b pb-1 border-gray-300">
+    <div class="flex flex-col items-center justify-between mx-6 pt-9 border-b pb-1 border-gray-300 md:px-4 md:mx-40 ">
       <!-- Navbar -->
       <header class="w-full bg-white p-4 flex justify-between items-center">
         <div class="flex items-center space-x-2">
-          <img src="https://s3.amazonaws.com/images.teladoc.com/member/Logo-Horz-RGB.svg" alt="Teladoc Logo" class="w-28" />
+          <img src="https://s3.amazonaws.com/images.teladoc.com/member/Logo-Horz-RGB.svg" alt="Teladoc Logo" class="w-28 md:w-32" />
         </div>
 
         <!--Location Dropdown 1 -->
-        <div class="flex space-x-2 items-center">
+        <div class="flex space-x-2 items-center md:space-x-9 md:mr-6">
           <div class="relative" @click="toggleDropdown('location')">
-            <div class="flex items-center cursor-pointer space-x-1">
-              <LocationMarkerIcon class="w-8 h-8 text-gray-700 border rounded-full p-2 shadow-sm" />
-              <span>{{ selectedLocation }}</span>
+            <div class="flex items-center cursor-pointer space-x-1 md:space-x-3">
+              <LocationMarkerIcon class="w-8 h-8 text-gray-700 border rounded-full p-2 shadow-sm " />
+              <span class="font-semibold">{{ selectedLocation }}</span>
             </div>
             <div v-if="dropdownOpen === 'location'" class="absolute right-0 mt-2 w-36 bg-white border border-gray-300 rounded-lg shadow-xl">
               <ul>
@@ -52,9 +52,9 @@ const selectLanguage = (language) => {
   
           <!--Language Dropdown 2 -->
           <div class="relative" @click="toggleDropdown('language')">
-            <div class="flex items-center cursor-pointer space-x-1">
+            <div class="flex items-center cursor-pointer space-x-1 md:space-x-3">
               <GlobeIcon class="w-8 h-8 text-gray-700 border rounded-full p-2 shadow-sm" />
-              <span>{{ selectedLanguage }}</span>
+              <span class="font-semibold">{{ selectedLanguage }}</span>
             </div>
             <div v-if="dropdownOpen === 'language'" class="absolute right-0 mt-2 w-24 bg-white border border-gray-300 rounded-lg shadow-lg">
               <ul>
