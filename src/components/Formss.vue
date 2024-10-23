@@ -5,7 +5,7 @@ import { EyeIcon } from "@heroicons/vue/solid";
 <template>
   
   <div class="bg-white px-12 pt-9 w-80 mx-auto md:w-1/3 md:mb-24">
-    <h1 class="hidden md:block md:text-4xl md:font-bold md:mb-10 ">Sign in to your account</h1>
+    <h1 class="hidden md:block md:text-3xl md:font-bold md:pb-10 md:text-nowrap ">Sign in to your account</h1>
     <form>
       <!-- Username field -->
       <div class="mb-4">
